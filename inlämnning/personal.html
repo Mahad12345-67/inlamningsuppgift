@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="project2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a:active{
+            color: #47b2e4;
+        }
+        a:hover{
+            color: #47b2e4;
+        }
+       
+    </style>
+   
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3 fixed-top" style="background-color: #324d75;opacity: 2;">
+        <div class="container">
+            
+
+            <!--toggle button for mobile nav--> <!--every bootstrap navbar has this-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#nav-menu" aria-controls="main-nav" aria-expanded="false"
+            aria-label="Toggle navigations">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--nav-links-->
+            <div class="collapse navbar-collapse justify-content-end align-center mt-2" id="nav-menu">
+                <ul class="navbar-nav justify-content-between">
+                    <li class="nav-item mx-2">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#about" class="nav-link" style="color: #fff;">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#services" class="nav-link" style="color: white;">Services</a>
+                    </li>
+                   
+                   
+
+                   
+                    
+                    <li class="nav-item mx-2">
+                        <a href="#contact" class="nav-link" style="color: white;">Contact</a>
+                    </li>
+                    <li>
+                       <a href="#" class="btn btn-outline-primary btn-lg rounded-pill d-none d-md-block mx-2">Get Started</a> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Showcase-->
+    
+    <section id="home" class="text-light p-5 text-center" style="background-color: #324d75;">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start justify-content-start">
+                    <h1 class="mt-5" >Mahad Farah</h1>
+                    <span><h1>Software developer</h1></span>
+                    <p class="text-muted mt-3 h3">Mahad Farah software developer from Stockholm</p>
+                    
+                   
+
+                <div class="col-md-5 mt-4 text-center d-md-block justify-content-end">
+                    <img class="img-fluid" src="hero-img.png" alt="bild">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Sponsorship-->
+
+    <section id="home" class="p-5 bg-light text-secondary">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center g-4">
+                <div class="col-6 col-lg-2 col-md-4">
+                    <img src="client-1.png" alt="" class="img-fluid w-50">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4">
+                    <img src="client-2.png" alt="" class="img-fluid w-50">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4">
+                    <img src="client-3.png" alt="" class="img-fluid w-50">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4">
+                    <img src="client-4.png" alt="" class="img-fluid w-50">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4">
+                    <img src="client-5.png" alt="" class="img-fluid w-50">
+                </div>
+                <div class="col-6 col-lg-2 col-md-4">
+                    <img src="client-6.png" alt="" class="img-fluid w-50">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--About Text-->
+
+    <section id="about" class="p-5">
+        <div class="container-lg">
+            <div class="text-center mb-5">
+                <h3 style="color: #37517e;" class="fw-bold">ABOUT ME</h3>
+            </div>
+         <div class="row justify-content-arounds ">
+            <div class="col-lg-6">
+                <p class="text-secondary mt-3" style="font-size: 15px;"></p>
+
+                <ul style="list-style: none; padding:0px">
+                    <li> <i class="bi bi-check2-all" style="color: #47b2e4;font-size: 20px;line-height: 2;"></i>    Fluent in 4 languages</li>
+                    <li> <i class="bi bi-check2-all " style="color: #47b2e4;font-size: 20px;line-height: 2;"></i>   High school diploma</li>
+                    <li> <i class="bi bi-check2-all " style="color: #47b2e4;font-size: 20px;line-height: 2;"></i>   Exceptional workrate</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 mt-3">
+                <p class="text-secondary mb-3" style="line-height: 2; font-size: 15px;">My name is Mahad Farah and I'm 20 years old. I'm currently studying in Jensen yrkeshögskola. I'm currently studying to become a software developer. I hope to finish my studies and hopefully work in this field for many years.</p>
+                 <a href="#" class="mt-4"><button class="btn btn-md btn-outline-primary" style="padding: 10px 28px 11px 28px;">Learn More</button></a>
+            </div>
+         </div>
+        </div>
+    </section>
+
+
+    <!--statistics-->
+
+    <section class="p-5 mb-4"  style="background-color:#f3f5fa;">
+        <div class="container-lg">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 mt-3">
+                    <img src="skills.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 mt-3">
+                    <h3 style="font-weight: 400;font-size: 40px;color: #37517e;" class="mb-2">Current skills</h3>
+                    <p class="text-secondary" style="font-weight: 400;line-height: 2;font-size: 15px;"><i>These are the charts for the languages that I feel most confident in.</i></p>
+                    <div class="content mt-3">
+                        <span  style="font-size: 12px;color:#4668a2;">HTML  <i style="float:right;color:#4668a2;">100%</i></span>
+                        <div class="progress mt-3">
+                            <div class="progress-bar" role="progressbar" style="width: 100%;background-color: #4668a2;height: 15px;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="content mt-4">
+                        <span class=" mt-3" style="font-size: 12px;color:#4668a2;">CSS <i style="float:right;color:#4668a2;">90%</i></span>
+                        <div class="progress mt-3">
+                            <div class="progress-bar" role="progressbar" style="width: 90%;background-color: #4668a2;height: 15px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
+                        </div>
+                    </div>
+                    <div class="content mt-4">
+                        <span class=" mt-3" style="font-size: 12px;color:#4668a2;">JAVASCRIPT <i style="float:right;color:#4668a2;">75%</i></span>
+                        <div class="progress mt-3">
+                            <div class="progress-bar" role="progressbar" style="width: 75%;background-color: #4668a2;height: 15px;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
+                        </div>
+                    </div>
+                    <div class="content mt-4">
+                        <span class="mt-3" style="font-size: 12px;color:#4668a2;">PHOTOSHOP <i style="float:right;color:#4668a2;">55%</i></span>
+                        <div class="progress mt-3">
+                            <div class="progress-bar" role="progressbar" style="width: 55%;background-color: #4668a2;height: 15px;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="55"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Services-->
+
+    <section id="services" style="background-color:#f3f5fa;" class="p-5">
+        <div class="container-lg">
+            <div class="text-center mt-3 mb-4">
+                <h3 style="color:#324d75; font-weight: 900 bold ;">SERVICES</h3>
+            </div>
+            
+            <p class=" text-center" style="margin-top: -10px;">These are the services that I can offer right now.</p>
+
+                <div class="row g-3">
+                
+                        <div class="col-lg-3 col-md-6">
+                            <div class="card">
+                                <div class="card-body" style="padding: 50px 30px;">
+                                    <div class="h3 mt-3 mb-3">
+                                        <i class="bi bi-dribbble" style="color:#47b2e4;"></i>
+                                    </div>
+                                    <div class="card-title">
+                                        <h3 class="mb-3" style="color: #37517e;">Website homepage</h3>
+                                    </div>
+                                    <div class="card-text mt-3">
+                                        <p style="font-size: 14px;">A website for your bussinesses. For the customers.</p>
+                                    </div>
+                                </div>
+                        </div>
+                        
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body" style="padding: 50px 30px;">
+                            <div class="h3 mt-3 mb-3">
+                                <i class="bi bi-file-earmark-text" style="color:#47b2e4;"></i>
+                            </div>
+                            <div class="card-title">
+                                <h3 class="mb-3" style="color: #37517e;">Work website</h3>
+                            </div>
+                            <div class="card-text mt-3">
+                                <p style="font-size: 14px;">Closed website for you and your collegues</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body" style="padding: 50px 30px;">
+                            <div class="h3 mt-3 mb-3">
+                                <i class="bi bi-speedometer2" style="color:#47b2e4;"></i>
+                            </div>
+                            <div class="card-title">
+                                <h3 class="mb-3" style="color: #37517e;">Management</h3>
+                            </div>
+                            <div class="card-text mt-3">
+                                <p style="font-size: 14px;">I'll manage your website and I'll always help out.</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
+                        <div class="card-body" style="padding: 50px 30px;">
+                            <div class="h3 mt-3 mb-3">
+                                <i class="bi bi-stack" style="color:#47b2e4;"></i>
+                            </div>
+                            <div class="card-title">
+                                <h3 class="mb-3" style="color: #37517e;">Updates</h3>
+                            </div>
+                            <div class="card-text mt-3">
+                                <p style="font-size: 14px;">You can always comeback for an update on your website.</p>
+                            </div>
+                        </div>
+                </div>
+                
+             
+            </div>
+    </section>
+
+
+    
+
+<!--Ask questions-->
+
+    <section class="p-5" style="background-color:#f3f5fa;">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2 style="color:#37517e;" class="mb-3">FREQUENTLY ASKED QUESTIONS</h2>
+                
+            <p class=" text-center mb-4" style="margin-top: -10px;">Here are some frequently asked questions</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample"  style="padding-bottom: 30px;">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingseven">
+                                <button style="background-color: white;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-question-circle" style="font-size: 24px;color: #47b2e4;"></i> <a href="#" style="color: #37517e;font-size: 16px;font-weight: 500;cursor: pointer; margin-left: 15px;text-decoration: none"
+                                    >How long would it take for you to finish? </a>
+                                  </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample"  style="padding-bottom: 30px;">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingseven">
+                                <button style="background-color: white;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-question-circle" style="font-size: 24px;color: #47b2e4;"></i> <a href="#" style="color: #37517e;font-size: 16px;font-weight: 500;cursor: pointer; margin-left: 15px;text-decoration: none"
+                                    >How to know wich service I need?</a>
+                                  </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample"  style="padding-bottom: 30px;">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingseven">
+                                <button style="background-color: white;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-question-circle" style="font-size: 24px;color: #47b2e4;"></i> <a href="#" style="color: #37517e;font-size: 16px;font-weight: 500;cursor: pointer; margin-left: 15px;text-decoration: none"
+                                    >Will I get charged again for an update on the webiste?</a>
+                                  </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample"  style="padding-bottom: 30px;">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingseven">
+                                <button style="background-color: white;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-question-circle" style="font-size: 24px;color: #47b2e4;"></i> <a href="#" style="color: #37517e;font-size: 16px;font-weight: 500;cursor: pointer; margin-left: 15px;text-decoration: none"
+                                    >How long is the management program?</a>
+                                  </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="accordion" id="accordionExample"  style="padding-bottom: 30px;">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingseven">
+                                <button style="background-color: white;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="bi bi-question-circle" style="font-size: 24px;color: #47b2e4;"></i> <a href="#" style="color: #37517e;font-size: 16px;font-weight: 500;cursor: pointer; margin-left: 15px;text-decoration: none"
+                                    >How do you assure privacy and confidentiality?</a>
+                                  </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingseven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!--Contact-->
+    <section class="p-5" id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2 class="mb-3" style="color:#324d75; font-weight: 900 bold ;">CONTACT</h2>
+                <p class=" text-center mb-4" style="margin-top: -10px;">Different ways to get in contact with me.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5 d-flex align-items-stretch">
+                    <div class="card" style="border-top: 3px solid #47b2e4;border-bottom: 3px solid #47b2e4;padding: 70px;background: #fff;">
+                        <div class="address d-block" style="display: block;">
+                            <i class="bi bi-geo-alt" style="font-size: 20px;color: #47b2e4;border-radius: 50px;background: #e7f5fb;width: 44px;height: 44px;justify-content: center;display: flex; align-items: center;cursor: pointer;"></i>
+                            <h4 style="color: #37517e;font-size: 22px;font-weight: 600;margin-bottom: 5px;padding: 0 0 0 60px; margin-top: -35px;">Location:</h4>
+                            <p style="padding: 0 0 10px 60px;color: #6182ba;font-size: 14px;margin-bottom: 20px;">A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="email" style="display: block;">
+                            <i class="bi bi-envelope" style="font-size: 20px;color: #47b2e4;border-radius: 50px;background: #e7f5fb;width: 44px;height: 44px;justify-content: center;display: flex; align-items: center;cursor: pointer;"></i>
+                            <h4 style="color: #37517e;font-size: 22px;font-weight: 600;margin-bottom: 5px;padding: 0 0 0 60px; margin-top: -35px;">Email:</h4>
+                            <p style="padding: 0 0 10px 60px;color: #6182ba;font-size: 14px;margin-bottom: 20px;">info@example.com</p>
+                        </div>
+                        <div class="phone" style="display: block;">
+                            <i class="bi bi-phone" style="font-size: 20px;color: #47b2e4;border-radius: 50px;background: #e7f5fb;width: 44px;height: 44px;justify-content: center;display: flex; align-items: center; cursor: pointer;"></i>
+                            <h4 style="color: #37517e;font-size: 22px;font-weight: 600;margin-bottom: 5px;padding: 0 0 0 60px; margin-top: -35px;">Call:</h4>
+                            <p style="padding: 0 0 10px 60px;color: #6182ba;font-size: 14px;margin-bottom: 20px;">+1 5589 55488 55s</p>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"  style="border:0; width: 100%; height: 290px;"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+                     <div class="card" style="border-top: 3px solid #47b2e4;border-bottom: 3px solid #47b2e4;padding:30px;background: #fff; width: 100%;">
+                        <div class="row">
+                            <div class="form-group col-md-6" style="margin-bottom: 20px;padding-bottom: 8px;">
+                                <label for="name" class="form-label" style="display: inline-block;padding-bottom: 8px;"> Your Name:</label>
+                                <input type="text" id="name" class="form-control" required>
+                            </div>
+                            <div class="form-group col-md-6" style="margin-bottom: 20px;padding-bottom: 8px;">
+                                <label for="email" class="form-label" style="display: inline-block;padding-bottom: 8px;">Your Email:</label>
+                                <input type="text" id="email" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="Subject" class="form-label" style="display: inline-block;padding-bottom: 8px;">Subject:</label>
+                                <input type="text" id="Subject" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <div class="form-group">
+                                <label for="message" class="form-label" style="display: inline-block;padding-bottom: 8px; margin-top: 25px;">Message:</label>
+                                <textarea name="message" id="message" class="form-control" required style="padding: 10px 12px; padding-bottom: 150px;" ></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text-center">
+                                 <a href="#" class="btn btn-lg btn-outline-primary mt-5" style="background: #47b2e4;padding: 12px 34px;border-radius: 50px;color: #fff ;">Send Message</a>
+                            </div> 
+                        </div>
+                    </div>
+            
+                </div>
+        </div>
+    </section>
+
+
+    <!--Newsletter <form class="mt-4" style="border-radius: 50px;background: #fff;padding: 6px 10px;margin-top: 30px;">
+                    <label type="email" class="form-label" style="padding: 4px 8px;"></label>
+                    <input type="submit" id="email" style="background: #47b2e4;border-radius: 50px;font-size: 16px;padding: 0 20px;" value="Subscribe" >
+                </form>-->
+    <section class="p-5" style="background-color:#f3f5fa;" >
+        <div class="container-lg">
+            <div class="row justify-content-center">
+            <div class="text-center">
+                <h2 class="mb-3" style="color:#324d75; font-weight: 900 bold ;">Join My Newsletter</h2>
+                <p class="mt-3 mb-2">Join my newsletter for constant updates on my work and see the feedback from customers.</p>
+            </div>
+            
+            
+                <div class=" col-lg-6">
+                    <div class="text-center">
+                    <form class="mt-4" style="
+                    background: #fff;
+                    padding: 6px 10px;
+                    position: relative;
+                    border-radius: 50px;
+                    box-shadow: 0px 2px 15px rgb(0 0 0 / 6%);
+                    text-align: left;">
+                        <label type="email" class="form-label"></label>
+                        <input type="text" id="email" style="border: 0;
+                        padding: 4px 8px;
+                        width: 500px">
+                        <input type="submit" id="email" style="position: absolute;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        border: 0;
+                        background: none;
+                        font-size: 16px;
+                        padding: 0 20px;
+                        background: #47b2e4;
+                        color: #fff;
+                        border-radius: 50px;
+                        box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);" value="Subscribe" >
+                    </form>
+                </div>
+                </div>
+                    
+            
+            
+        </div>
+    </section>
+
+    <!--footer-->
+
+    <section class="p-5">
+        <div class="container-lg">
+            <div class="row justify-content-center g-3">
+                <div class="col-lg-3 text-align-center" style="margin-bottom: 30px;">
+                        <h3 style="color:#324d75;" class="mb-3">Mahad</h3>
+                        <p style="font-size: 14px;line-height: 24px;color: #5e5e5e;">
+                            A108 Adam Street <br>
+                            New York, NY 535022 <br>
+                            USA <br>
+                            <br>
+                            <strong>Phone:</strong>  +46 71 23 45 67 <br>
+                            <strong>Email:</strong>  Mahad.farah879@outlook.com <br>
+
+                        </p>
+                    
+                    
+                </div>
+                <div class="col-lg-3 text-align-center text-light" style="margin-bottom: 30px;">
+                    <h5 style="color:#324d75;font-size: 18px;" >Useful Links</h5>
+                    <ul style="list-style-type: none;">
+                        <li style="padding: 10px 0;"><i class="bi bi-chevron-right" style="color:#47b2e4;font-size: 12px; margin-left: -20px;"></i>
+                            <a href="#" style="color: #777777;text-decoration: none;font-size: 14px; ">Home</a> </li>
+                        <li style="padding: 10px 0;"><i class="bi bi-chevron-right" style="color:#47b2e4;font-size: 12px; margin-left: -20px;"></i>
+                             <a href="#" style="color: #777777;text-decoration: none;font-size: 14px;">About Us</a> </li>
+                        <li style="padding: 10px 0;"><i class="bi bi-chevron-right" style="color:#47b2e4;font-size: 12px; margin-left: -20px;"></i>
+                             <a href="#" style="color: #777777;text-decoration: none;font-size: 14px;">Services</a> </li>
+                        <li style="padding: 10px 0;"><i class="bi bi-chevron-right" style="color:#47b2e4;font-size: 12px; margin-left: -20px;"></i>
+                             <a href="#" style="color: #777777;text-decoration: none;font-size: 14px;">Terms of service</a> </li>
+                        
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 text-align-center" style="margin-bottom: 30px;">
+                    <h5 style="color:#324d75;font-size: 18px;" >My Sevices</h5>
+                    <ul style="list-style-type: none;">
+                        <li style="padding: 10px 0;"><i class="bi bi-chevron-right" style="color:#47b2e4;font-size: 12px; margin-left: -20px;"></i>
+                            <a href="#" style="color: #777777;text-decoration: none;font-size: 14px; ">Web Design</a> </li>
+                        <li style="padding: 10px 0;"><i class="bi bi-chevron-right" style="color:#47b2e4;font-size: 12px; margin-left: -20px;"></i>
+                             <a href="#" style="color: #777777;text-decoration: none;font-size: 14px;">Web Development</a> </li>
+                        <li style="padding: 10px 0;"><i class="bi bi-chevron-right" style="color:#47b2e4;font-size: 12px; margin-left: -20px;"></i>
+                             <a href="#" style="color: #777777;text-decoration: none;font-size: 14px;">Product Management</a> </li>
+                        <li style="padding: 10px 0;"><i class="bi bi-chevron-right" style="color:#47b2e4;font-size: 12px; margin-left: -20px;"></i>
+                            <a href="#" style="color: #777777;text-decoration: none;font-size: 14px;">Graphic Design</a> </li>
+
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 style="color:#324d75;font-size: 18px;" class="mb-4" >My Social Networks</h5>
+                    <p style="font-size: 14px;" class="mb-5">You can follow me on my social networks</p>
+                    <div class="socials">
+                        <a href="#"><i class="bi bi-twitter mx-1 border-radius-50%" style="background-color:#47b2e4;border-radius: 50%;color: #fff;
+                            border: 1px grey;padding: 10px;"></i></a>
+                        <a href="#"><i class="bi bi-facebook  mx-1 border-radius-50%" style="background-color:#47b2e4;border-radius: 50%;color: #fff;
+                            border: 1px grey;padding: 10px;"></i></a>
+                        <a href="#"><i class="bi bi-instagram mx-1 border-radius-50%" style="background-color:#47b2e4;border-radius: 50%;color: #fff;
+                            border: 1px grey;padding: 10px;"></i></a>
+                        <a href="#"><i class="bi bi-linkedin mx-1 border-radius-50%" style="background-color:#47b2e4;border-radius: 50%;color: #fff;
+                            border: 1px grey;padding: 10px;"></i></a>
+                            
+                     </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Footer2-->
+<section>
+    <footer class="p-5" style="background-color: #324d75 ;">
+        <div class="container">
+           
+
+            <p style="float: right; color: #fff;" >Designed by <strong >Mahad Farah</strong></p>
+
+    
+           
+        </div>
+    </footer>
+</section>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="right: 15px;position:fixed;bottom: 15px;z-index: 996;
+            width: 40px;height: 40px;border-radius: 50px;">
+                     <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
